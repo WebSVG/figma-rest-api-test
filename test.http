@@ -1,0 +1,17 @@
+@figma_pat={{$dotenv FIGMA_PAT}}
+
+### get Files Heat Slider
+GET https://api.figma.com/v1/files/3hQ1lbwUObnhRX6EsGk7tD
+X-Figma-Token: {{figma_pat}}
+
+### get Files pcb
+GET https://api.figma.com/v1/files/FEmoIst5aMBK22UfZLScxR
+X-Figma-Token: {{figma_pat}}
+
+###get image of a specific node
+GET https://api.figma.com/v1/images/3hQ1lbwUObnhRX6EsGk7tD?ids=1:2
+X-Figma-Token: {{figma_pat}}
+
+
+###now get the result image url
+GET https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/05030dcf-edb4-4ffc-9e1d-455973398eeb
